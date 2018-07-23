@@ -9,8 +9,8 @@ promptString msg io1 =
 
 mapAction :: (a -> b) -> Action a -> Action b
 mapAction f action io1 =
-  let (_, _) = action io1
-   in (_, _)
+  let (io2, a) = action io1
+   in (io2, f a)
 
 promptInt :: String -> Action Int
 promptInt msg = mapAction readInt (promptString msg)
