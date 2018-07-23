@@ -19,3 +19,8 @@ inner io1 =
    in (io3, ())
 
 main = run inner
+
+-- showInt :: Int -> String
+-- readInt :: String -> Int
+
+-- f (g (h x)) == (f . g . h) x == f . g . h $ x
