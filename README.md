@@ -29,5 +29,7 @@ You'll essentially need three things for this workshop:
 
 3. Setup the compiler by running `stack build` inside this directory.
 
+4. Run `stack runghc ex1-fake-it.hs` to run an exercise code.
+
 I'll provide instructions during the workshop of how to perform the
 exercises.
