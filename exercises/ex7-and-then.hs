@@ -16,7 +16,9 @@ printInt = print . showInt
 
 andThen :: Action a -> (a -> Action b) -> Action b
 andThen getVal useVal io1 =
-  _
+  let (io2, a) = getVal io1
+      (io3, b) = useVal a io2
+   in (io3, b)
 
 inner :: Action ()
 inner = doBoth echoName echoAge
